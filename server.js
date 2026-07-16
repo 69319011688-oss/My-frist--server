@@ -36,7 +36,6 @@ body{
     position:relative;
 }
 
-/* Animated background elements */
 .bg-blob{
     position:absolute;
     border-radius:50%;
@@ -438,7 +437,6 @@ for(let i=0;i<50;i++){
     snow.appendChild(s);
 }
 
-// Add interactivity to profile
 document.querySelector('.profile').addEventListener('click', function(){
     this.style.animation='none';
     setTimeout(()=>{
@@ -453,9 +451,9 @@ document.querySelector('.profile').addEventListener('click', function(){
 
 </body>
 </html>
-\`);
+`);
 });
 
 server.listen(port, () => {
-    console.log(\`Server Running : http://localhost:\${port}\`);
+    console.log("Server Running : http://localhost:" + port);
 });
