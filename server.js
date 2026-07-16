@@ -41,7 +41,6 @@ body{
     position:relative;
 }
 
-/* Animated gradient background */
 .gradient-bg{
     position:fixed;
     top:0;
@@ -60,7 +59,6 @@ body{
     100%{background-position:0% 50%;}
 }
 
-/* Floating orbs */
 .orb{
     position:absolute;
     border-radius:50%;
@@ -102,7 +100,6 @@ body{
     50%{transform:translate(40px,-40px);}
 }
 
-/* Main container */
 .container{
     z-index:10;
     position:relative;
@@ -368,7 +365,6 @@ button:active{
     }
 }
 
-/* Particles */
 .particles{
     position:absolute;
     width:100%;
@@ -527,7 +523,6 @@ function showmore(){
     toggleinfo=!toggleinfo;
 }
 
-// Create particles
 const particlesContainer=document.getElementById("particles");
 for(let i=0;i<30;i++){
     const particle=document.createElement("div");
@@ -541,7 +536,6 @@ for(let i=0;i<30;i++){
     particlesContainer.appendChild(particle);
 }
 
-// Profile interaction
 document.querySelector('.profile').addEventListener('click', function(){
     this.style.animation='none';
     setTimeout(()=>{
@@ -553,7 +547,6 @@ document.querySelector('.profile').addEventListener('click', function(){
     }, 600);
 });
 
-// Message interaction
 document.getElementById("message").addEventListener('click', function(){
     if(this.innerHTML!=''){
         this.style.animation='none';
@@ -567,7 +560,7 @@ document.getElementById("message").addEventListener('click', function(){
 
 </body>
 </html>
-\`);
+`);
 });
 
 server.listen(port, () => {
